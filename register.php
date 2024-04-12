@@ -15,7 +15,7 @@
     <form method="POST">
 
    
-        <label>Student USN:</label><br>
+        <label>Register No:</label><br>
         <input type="text" name="usn" class="form-control" required><br><br>
 
         <label>Student Name:</label><br>

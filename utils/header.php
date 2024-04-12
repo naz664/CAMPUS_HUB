@@ -4,7 +4,7 @@
     background-image: url(images/cs03.jpg);
     background-size: cover;
     background-position: center center;
-    height: 650px;
+    height: 500px;
     margin-bottom: 25px;
 }
 </style>

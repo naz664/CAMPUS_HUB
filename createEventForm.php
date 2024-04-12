@@ -16,7 +16,7 @@
   <div class ="content"><!--body content holder-->
             <div class = "container">
                 <div class ="col-md-6 col-md-offset-3">
-                <label>Event ID:</label><br>
+                <label>Event No:</label><br>
     <input type="number" name="event_id" required class="form-control"><br><br>
     
     <label>Event Name:</label><br>
@@ -28,7 +28,11 @@
     <label>Upload Path to Image:</label><br>
     <input type="text" name="img_link" required class="form-control"><br><br>
 
-    <label>Type_ID </label><br>
+    <label>Type No:
+     <br> 1. Technical events
+     <br> 2. Gaming events
+     <br> 3. on-stage events
+     <br> 4. off-stage events </label></br>
     <input type="number" name="type_id" required class="form-control"><br><br>
 
     <label>Event Date</label><br>
@@ -51,8 +55,6 @@
   
   </div></div></div>
   </form>
-    
-
     
     </body>
 

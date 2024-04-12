@@ -12,12 +12,13 @@
 
         <div class ="content"><!--body content holder-->
             <div class = "container">
+
                 <div class ="col-md-6 col-md-offset-3">
                     <form action="RegisteredEvents.php" class ="form-group" method="POST">
 
                         
                         <div class="form-group">
-                            <label for="usn"> Student USN: </label>
+                            <label for="usn"> Regsiter No: </label>
                             <input type="text"
                                    id="usn"
                                    name="usn"
@@ -25,6 +26,7 @@
                         </div>
                         <button type="submit" class = "btn btn-default">Login</button>
                     </form>
+
                 </div>
             </div>
         </div>

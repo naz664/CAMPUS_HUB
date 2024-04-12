@@ -162,8 +162,10 @@ INSERT INTO `registered` (`rid`, `usn`, `event_id`) VALUES
 (4, '1VA17CS005', 3),
 (5, '1VA17CS012', 3),
 (6, '1VA17CS012', 5),
-(8, '1VA17CS005', 6),
-(10, '1VA17CS034', 7);
+(7, '1VA17CS005', 6),
+(8, '1VA17CS034', 7);
+(9, 'yce21cs037', 1);
+
 
 --
 -- Triggers `registered`
