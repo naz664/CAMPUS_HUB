@@ -27,6 +27,7 @@ if (mysqli_num_rows($result) > 0) {
                         <tr>
                             
                             <th>Event_name</th>
+                            <th>Event_description</th>
                             <th>No. of Participents</th>
                             <th>Price</th>
                             <th>Student Co-ordinator</th>
@@ -46,7 +47,8 @@ if (mysqli_num_rows($result) > 0) {
                             echo '<tr>';
                 
                    
-                             echo '<td>' . $row['event_title'] . '</td>';                    
+                             echo '<td>' . $row['event_title'] . '</td>'; 
+                             echo '<td>' . $row['event_description'] . '</td>'; 
                             echo '<td>' . $row['participents'] . '</td>';
                             echo '<td>' . $row['event_price'] . '</td>';
                             echo '<td>' . $row['st_name'] . '</td>';

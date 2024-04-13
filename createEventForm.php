@@ -22,6 +22,9 @@
     <label>Event Name:</label><br>
     <input type="text" name="event_title" required class="form-control"><br><br>
 
+    <label>Event Description:</label><br>
+    <textarea  type="text" name="event_description"  required class="form-control"  rows="15" cols="71"></textarea><br><br>
+
     <label>Event Price:</label><br>
     <input type="number" name="event_price" required class="form-control"><br><br>
 
@@ -80,8 +83,6 @@
 
     {
       include 'classes/db1.php';
-        
-        
    
         $INSERT="INSERT INTO events(event_id,event_title,event_price,img_link,type_id) VALUES($event_id,'$event_title', $event_price,'$img_link',$type_id);";
 

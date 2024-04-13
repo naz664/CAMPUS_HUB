@@ -22,7 +22,7 @@
             
             <div class="container">
                 <div class="col-md-6 contacts">
-                    <h1 style="color:#000080 ; font-size:42px ; font-style:bold "><span class="glyphicon glyphicon-user"></span> Clg office </h1>
+                    <h1 style="color:#000080 ; font-size:42px ; font-style:bold "><span class="glyphicon glyphicon-user"></span> College office </h1>
                     <p>
                       
                       <h4><span class="glyphicon glyphicon-envelope"></span><strong> Email: ycet.ac.in<br></h4>

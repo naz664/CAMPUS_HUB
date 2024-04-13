@@ -31,6 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `events` (
   `event_id` int(11) NOT NULL,
   `event_title` varchar(50) NOT NULL,
+  `event_description` varchar(250) NOT NULL,
   `event_price` int(11) DEFAULT NULL,
   `participents` int(100) DEFAULT 0,
   `img_link` text DEFAULT NULL,
@@ -41,21 +42,21 @@ CREATE TABLE `events` (
 -- Dumping data for table `events`
 --
 
-INSERT INTO `events` (`event_id`, `event_title`, `event_price`, `participents`, `img_link`, `type_id`) VALUES
-(1, 'Cryptohunt', 100, 0, 'images/crypto.png', 1),
-(2, 'Search-it', 50, 2, 'images/cs03.jpg', 1),
-(3, 'Technical-Quiz', 50, 2, 'images/quiz.png', 1),
-(4, 'Competitive-Coding', 50, 1, 'images/coding.jpg', 1),
-(5, 'Pubg', 50, 1, 'images/pubg.jpg', 2),
-(6, 'Counter-Strike', 100, 1, 'images/counter.jpg\r\n', 2),
-(7, 'Fashion-Show', 200, 1, 'images/onstage.jpg', 3),
-(8, 'Dance', 100, 0, 'images/dance.jpg', 3),
-(9, 'Singing', 50, 0, 'images/sing.jpg', 3),
-(10, 'Svit-Idol', 100, 0, 'images/idol.jpg', 3),
-(11, 'Cooking-Without-Fire', 50, 0, 'images/cook.jpg', 4),
-(12, 'Short-Movie', 200, 0, 'images/offstage.jpg', 4),
-(13, 'Mehandi', 100, 0, 'image/mehandi.jpg', 4),
-(14, 'Rangoli', 50, 0, 'images/cs03.jpg', 4);
+INSERT INTO `events` (`event_id`, `event_title`, `event_description`, `event_price`, `participents`, `img_link`, `type_id`) VALUES
+(1, 'Cryptohunt','', 100, 0, 'images/crypto.png', 1),
+(2, 'Search-it','', 50, 2, 'images/cs03.jpg', 1),
+(3, 'Technical-Quiz','', 50, 2, 'images/quiz.png', 1),
+(4, 'Competitive-Coding','', 50, 1, 'images/coding.jpg', 1),
+(5, 'Pubg','', 50, 1, 'images/pubg.jpg', 2),
+(6, 'Counter-Strike','', 100, 1, 'images/counter.jpg\r\n', 2),
+(7, 'Fashion-Show','', 200, 1, 'images/onstage.jpg', 3),
+(8, 'Dance','', 100, 0, 'images/dance.jpg', 3),
+(9, 'Singing','', 50, 0, 'images/sing.jpg', 3),
+(10, 'Svit-Idol','', 100, 0, 'images/idol.jpg', 3),
+(11, 'Cooking-Without-Fire','', 50, 0, 'images/cook.jpg', 4),
+(12, 'Short-Movie','', 200, 0, 'images/offstage.jpg', 4),
+(13, 'Mehandi','', 100, 0, 'image/mehandi.jpg', 4),
+(14, 'Rangoli','', 50, 0, 'images/cs03.jpg', 4);
 
 -- --------------------------------------------------------
 
@@ -163,7 +164,7 @@ INSERT INTO `registered` (`rid`, `usn`, `event_id`) VALUES
 (5, '1VA17CS012', 3),
 (6, '1VA17CS012', 5),
 (7, '1VA17CS005', 6),
-(8, '1VA17CS034', 7);
+(8, '1VA17CS034', 7),
 (9, 'yce21cs037', 1);
 
 

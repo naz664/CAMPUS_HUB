@@ -260,9 +260,6 @@ header .modal-body .rgsterbtn:hover {
 }
 /*---*/
 
-
-
-
 /*styles for contact us page*/
 .contacts > h1 {
     line-height: 2;
@@ -275,4 +272,58 @@ header .modal-body .rgsterbtn:hover {
 textarea {
     resize: none;
 }
+
+
 /*---*/
+
+
+/*body style*/
+body {
+    overflow-x: hidden;
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+}
+
+/*Header styles*/
+header .navbar {
+    padding: 20px 0;
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+}
+
+/*Jumbotron*/ 
+.jumbotron { 
+    background-color: transparent;
+    color: #ecf0f1;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px black;
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+}
+
+/*Footer styles*/
+footer { 
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+    color: #E0E0E0;
+    line-height: 2;
+    background-color: #001825;
+    padding-top: 20px;
+}
+
+/*Modal Styles*/
+.modal-footer {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+}
+
+/*Contacts Page Styles*/
+.contacts > h1 {
+    line-height: 2;
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+}
+
+.contacts > p {
+    line-height: 2;
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+}
+

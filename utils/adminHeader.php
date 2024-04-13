@@ -30,6 +30,7 @@
             <li><a href = "Stu_details.php"><strong>Student Details</strong></a></li>
                     <li><a href = "Stu_cordinator.php"><strong>Student Co-ordinator</strong></a></li>
                     <li><a href = "Staff_cordinator.php"><strong>Staff-Co-ordinator</strong></a></li>
+                    <li><a href = "certificate/certificate.php"><strong>Certificates</strong></a></li>
                     <li class="btnlogout"><a class = "btn btn-default navbar-btn" href = "index.php">Logout <span class = "glyphicon glyphicon-log-out"></span></a></li>            
         
             </ul>
@@ -38,7 +39,7 @@
     <div class = "col-md-12">
         <div class = "container">
             <div class = "jumbotron"><!--jumbotron-->
-                <h1><strong>Explore<br></strong> Your Favorite Event</h1><!--jumbotron heading-->
+                <h1><strong>Explore<br>Your Favorite Event</h1></strong><!--jumbotron heading-->
                 <div class="browse d-md-flex col-md-14" >
                 <div class="row">
                   
