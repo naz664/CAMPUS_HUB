@@ -23,13 +23,14 @@
                             echo 'Student Co-ordinator:' . $row['st_name'] .'<br>'; 
                             echo 'Staff Co-ordinator:' . $row['name'] .'<br>'; 
                             echo 'Event Price:' . $row['event_price'].'<br>' ;
+                            echo 'Event Description:' . $row['event_description'].'<br>' ;
                     
                         ?>
                             </p>
                             
                             <br><br>
                         <?php echo
-                             '<a class="btn btn-default" href="register.php"> <span class="glyphicon glyphicon-circle-arrow-right"></span>Register</a>'
+                             '<a class="btn btn-default" href="registertodb.php"> <span class="glyphicon glyphicon-circle-arrow-right"></span>Register</a>'
                             ?>
                                                         </div><!--subcontent div-->
                     </div><!--container div-->

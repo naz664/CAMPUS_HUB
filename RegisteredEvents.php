@@ -2,68 +2,68 @@
 require_once 'utils/header.php';
 require_once 'utils/styles.php';
 
-$usn=$_POST['usn'];
+// Check if the form has been submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usn = $_POST['usn'];
 
-include_once 'classes/db1.php';
+    include_once 'classes/db1.php';
 
-$result = mysqli_query($conn, "SELECT * FROM registered r,staff_coordinator s ,event_info ef ,student_coordinator st,events e where e.event_id= ef.event_id and e.event_id= s.event_id and e.event_id= st.event_id and r.usn= '$usn' and r.event_id=e.event_id");
+    $result = mysqli_query($conn, "SELECT * FROM registered r, staff_coordinator s, event_info ef, student_coordinator st, events e WHERE e.event_id = ef.event_id AND e.event_id = s.event_id AND e.event_id = st.event_id AND r.usn = '$usn' AND r.event_id = e.event_id");
 ?>
-
-<div class = "content">
-            <div class = "container">
-            <h1> Registered Events</h1>
-             <?php
-if (mysqli_num_rows($result) > 0) {
-?> 
-                <table class="table table-hover" >
+    <div class="content">
+        <div class="container">
+            <h1>Registered Events</h1>
+            <?php if (mysqli_num_rows($result) > 0) { ?>
+                <table class="table table-hover">
                     <thead>
                         <tr>
-                            
-                            <th>Event_name</th>             
-                           <th>Student Co-ordinator</th>
-                            <th>Staff Co-ordinator</th>
-                           
+                            <th>Event Name</th>
+                            <th>Student Coordinator</th>
+                            <th>Staff Coordinator</th>
                             <th>Date</th>
-                        
                             <th>Time</th>
-                            <th>location </th>
-                          
+                            <th>Location</th>
                         </tr>
                     </thead>
                     <tbody>
-                    <?php
-                    $i=0;
-                    while($row = mysqli_fetch_array($result)) {
-
+                        <?php
+                        while ($row = mysqli_fetch_array($result)) {
                             echo '<tr>';
-                            echo '<td>' . $row['event_title'] . '</td>';                    
+                            echo '<td>' . $row['event_title'] . '</td>';
                             echo '<td>' . $row['st_name'] . '</td>';
                             echo '<td>' . $row['name'] . '</td>';
-                           
-                            echo '<td>'.$row['Date'].'</td>';
-                            echo '<td>'.$row['time'].'</td>';
-                            echo '<td>'.$row['location'].'</td>';
-                            
-                         
-                            echo '</tr>';  
-
-                            $i++;
+                            echo '<td>' . $row['Date'] . '</td>';
+                            echo '<td>' . $row['time'] . '</td>';
+                            echo '<td>' . $row['location'] . '</td>';
+                            echo '</tr>';
                         }
-                      
                         ?>
                     </tbody>
                 </table>
-                    <?php }
-                    else{
-                    echo 'Not Yet Rgistered any events';
-                    
-                    }?>
-                
-               
+            <?php } else {
+                echo 'Not yet registered for any events.';
+            } ?>
+
+            <!-- Section for displaying participated events results -->
+            <div class="content">
+                <div class="container">
+                    <h1>Participated Events Results</h1>
+                    <!-- Your PHP code to display participated events results goes here -->
+                    <!-- For example: -->
+                    <p>No results available at the moment.</p>
+                </div>
             </div>
+
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-default btn-lg"><a href="index.php"><strong>Register events</strong></a></button>
+            </div>
+
         </div>
+    </div>
 
-        <div class="col-md-12">
-        <button type="submit" class = "btn btn-default"><a href = "index.php"><strong>Register events</strong></a></button>
-
-        <?php include 'utils/footer.php'; ?> 
+    <?php
+    include 'utils/footer.php';
+} else {
+    // If the form hasn't been submitted, redirect or display an error message
+}
+?>

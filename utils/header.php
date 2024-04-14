@@ -24,9 +24,7 @@
                     <li><a href = "contact.php"><strong>Contact Us</strong></a></li>
                     <li><a href = "aboutus.php"><strong>Alerts</strong></a></li>
                     <li class="btnlogout"><a class = "btn btn-default navbar-btn" href = "login_form.php">Login <span class = "glyphicon glyphicon-log-in"></span></a></li>
-
-            
-                
+              
                 
             </ul>
         </div><!--container div-->

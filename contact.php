@@ -24,8 +24,7 @@
                 <div class="col-md-6 contacts">
                     <h1 style="color:#000080 ; font-size:42px ; font-style:bold "><span class="glyphicon glyphicon-user"></span> College office </h1>
                     <p>
-                      
-                      <h4><span class="glyphicon glyphicon-envelope"></span><strong> Email: ycet.ac.in<br></h4>
+                      <h4><span class="glyphicon glyphicon-envelope"></span><strong> Email:<a href= "http://ycet.ac.in/"> ycet.ac.in </a> <br></h4>
                       <h4>   <span class="glyphicon glyphicon-phone"></span><strong> Mobile: 0474-2724305 </h4>
                     </p>
                 </div>

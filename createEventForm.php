@@ -70,6 +70,7 @@
   {
   $event_id=$_POST["event_id"];
     $event_title=$_POST["event_title"];
+    $event_description=$_POST["event_description"];
     $event_price=$_POST["event_price"];
 
     $img_link=$_POST["img_link"];
@@ -79,12 +80,12 @@
     $Date=$_POST["Date"];
     $time=$_POST["time"];
     $location=$_POST["location"];
-    if(!empty($event_id) || !empty($event_title) || !empty($event_price) || !empty($participents) || !empty($img_link) || !empty($type_id) )
+    if(!empty($event_id) || !empty($event_title) || !empty($event_description) || !empty($event_price) || !empty($participents) || !empty($img_link) || !empty($type_id) )
 
     {
       include 'classes/db1.php';
    
-        $INSERT="INSERT INTO events(event_id,event_title,event_price,img_link,type_id) VALUES($event_id,'$event_title', $event_price,'$img_link',$type_id);";
+        $INSERT="INSERT INTO events(event_id,event_title,event_description,event_price,img_link,type_id) VALUES($event_id,'$event_title','$event_description', $event_price,'$img_link',$type_id);";
 
             $INSERT.= "INSERT INTO event_info (event_id,Date,time,location) Values ($event_id,'$Date','$time','$location');";
             $INSERT.="INSERT into student_coordinator(sid,st_name,phone,event_id)  values($event_id,'$st_name',NULL,$event_id);";

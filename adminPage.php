@@ -45,10 +45,9 @@ if (mysqli_num_rows($result) > 0) {
                      $i=0;
                      while($row = mysqli_fetch_array($result)){
                             echo '<tr>';
-                
-                   
-                             echo '<td>' . $row['event_title'] . '</td>'; 
-                             echo '<td>' . $row['event_description'] . '</td>'; 
+                                  
+                            echo '<td>' . $row['event_title'] . '</td>'; 
+                            echo '<td>' . $row['event_description'] . '</td>'; 
                             echo '<td>' . $row['participents'] . '</td>';
                             echo '<td>' . $row['event_price'] . '</td>';
                             echo '<td>' . $row['st_name'] . '</td>';

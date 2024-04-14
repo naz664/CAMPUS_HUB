@@ -43,7 +43,7 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`event_id`, `event_title`, `event_description`, `event_price`, `participents`, `img_link`, `type_id`) VALUES
-(1, 'Cryptohunt','', 100, 0, 'images/crypto.png', 1),
+(1, 'Cryptohunt','cryptohunt is a game ', 100, 0, 'images/crypto.png', 1),
 (2, 'Search-it','', 50, 2, 'images/cs03.jpg', 1),
 (3, 'Technical-Quiz','', 50, 2, 'images/quiz.png', 1),
 (4, 'Competitive-Coding','', 50, 1, 'images/coding.jpg', 1),
@@ -121,6 +121,7 @@ INSERT INTO `event_type` (`type_id`, `type_title`) VALUES
 CREATE TABLE `participent` (
   `usn` varchar(20) NOT NULL,
   `name` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `branch` varchar(11) NOT NULL,
   `sem` int(11) NOT NULL,
   `email` varchar(300) NOT NULL,
@@ -132,13 +133,13 @@ CREATE TABLE `participent` (
 -- Dumping data for table `participent`
 --
 
-INSERT INTO `participent` (`usn`, `name`, `branch`, `sem`, `email`, `phone`, `college`) VALUES
-('1VA17CS005', 'Anu', 'CSE', 5, 'annapoornaba@gmail.com', '8123300011', 'svit'),
-('1VA17CS012', 'BHAVANA', 'cse', 5, 'BHAVANA@GMAIL.COM', '9934736623', 'Svit'),
-('1VA17CS022', 'Kavya', 'cse', 5, 'Kavya@gmail.com', '7888387323', 'svit'),
-('1VA17CS025', 'Mythri', 'ISE', 5, 'mythri@saividya.ac.in', '8998848488', 'svit'),
-('1VA17CS034', 'Prajwal', 'cse', 5, 'prajwal@gmail.com', '9858787438', 'svit'),
-('1VA17IS045', 'Prathiksha', 'ISE', 5, 'prathi@gmail.com', '7897854345', 'svit');
+INSERT INTO `participent` (`usn`, `name`, `password`, `branch`, `sem`, `email`, `phone`, `college`) VALUES
+('1VA17CS005', 'Anu', 'anu123','CSE', 5, 'annapoornaba@gmail.com', '8123300011', 'svit'),
+('1VA17CS012', 'BHAVANA', '','cse', 5, 'BHAVANA@GMAIL.COM', '9934736623', 'Svit'),
+('1VA17CS022', 'Kavya', '','cse', 5, 'Kavya@gmail.com', '7888387323', 'svit'),
+('1VA17CS025', 'Mythri', '','ISE', 5, 'mythri@saividya.ac.in', '8998848488', 'svit'),
+('1VA17CS034', 'Prajwal', '','cse', 5, 'prajwal@gmail.com', '9858787438', 'svit'),
+('1VA17IS045', 'Prathiksha', '', 'ISE', 5, 'prathi@gmail.com', '7897854345', 'svit');
 
 -- --------------------------------------------------------
 
