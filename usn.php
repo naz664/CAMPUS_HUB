@@ -13,7 +13,9 @@
                 alert("Please enter your Registration No.");
                 return false;
             }
+            
         }
+
     </script>
 </head>
 <body>

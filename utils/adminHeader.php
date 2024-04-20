@@ -31,6 +31,7 @@
                     <li><a href = "Stu_cordinator.php"><strong>Student Co-ordinator</strong></a></li>
                     <li><a href = "Staff_cordinator.php"><strong>Staff-Co-ordinator</strong></a></li>
                     <li><a href = "certificate/certificate.php"><strong>Certificates</strong></a></li>
+                    <li><a href = "results.php"><strong>Results</strong></a></li>
                     <li class="btnlogout"><a class = "btn btn-default navbar-btn" href = "index.php">Logout <span class = "glyphicon glyphicon-log-out"></span></a></li>            
         
             </ul>

@@ -60,8 +60,6 @@
   </form>
     
     </body>
-
-  <?php require 'utils/footer.php'; ?>
 </html>
 
 <?php

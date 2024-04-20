@@ -17,8 +17,8 @@
                 <label>Student Name:</label><br>
                 <input type="text" name="name" class="form-control" required><br><br>
                 
-                <label>Password:</label><br>
-                <input type="text" name="reg_password" class="form-control" required><br><br>
+          <!--      <label>Password:</label><br>
+                 <input type="text" name="reg_password" class="form-control" required><br><br> -->
 
                 <label>Branch:</label><br>
                 <input type="text" name="branch" class="form-control" required><br><br>
@@ -42,7 +42,7 @@
     </div>
 </div>
 
-<?php require 'utils/footer.php'; ?>
+
 
 <?php
 

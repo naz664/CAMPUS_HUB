@@ -33,7 +33,6 @@ include_once 'classes/db1.php';?>
                 </div><!--col md 6 div-->
             </div><!--container div-->
         </div><!--content div-->
-        <?php require 'utils/footer.php'; ?><!--footer content. file found in utils folder-->
     </body>
 </html>
 <?php
