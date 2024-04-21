@@ -1,0 +1,60 @@
+Event: cryptohunt
+Winner 1: NAZIM - CS6
+Winner 2: Test 2 - CS4
+Winner 3: Test3 - CS6
+
+Event: search-it
+Winner 1: Test 4 - CE1
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: technical-quiz
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: competitive-coding
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: pubg
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: counter-strike
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: fashion-show
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: dance
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: singing-show
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: svit-idol
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: cooking-without-fire
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+
+Event: short-movie
+Winner 1: Data Not Available
+Winner 2: Data Not Available
+Winner 3: Data Not Available
+

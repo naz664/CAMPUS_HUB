@@ -48,9 +48,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="content">
             <div class="container">
                 <h1>Participated Events Results</h1>
-                <!-- Your PHP code to display participated events results goes here -->
-                <!-- For example: -->
-                <p>No results available at the moment.</p>
+                <?php
+                // Read contents of winners.txt file
+                $winners_file = 'winners.txt'; // Update this with the actual path to winners.txt
+                if (file_exists($winners_file)) {
+                    $winners_content = file_get_contents($winners_file);
+                    echo nl2br(htmlspecialchars($winners_content)); // Display contents with line breaks and HTML special characters encoded
+                } else {
+                    echo 'Winners file not found.';
+                }
+                ?>
             </div>
 
             <!-- Button to download certificate -->
