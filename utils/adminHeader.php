@@ -22,12 +22,12 @@
             <div class="navbar-header"><!--website name/title-->
              
                 <a class = "navbar-brand">
-                    YCET
+                <h2><strong> YCET </strong></h2>  
                 </a> 
             </div>
             <ul class="nav navbar-nav navbar-right"><!--navigation-->
             <li><a href = "adminPage.php"><strong>Home</strong></a></li>
-            <li><a href = "Stu_details.php"><strong>Student Details</strong></a></li>
+       <!--     <li><a href = "Stu_details.php"><strong>Student Details</strong></a></li> -->   
                     <li><a href = "Stu_cordinator.php"><strong>Student Co-ordinator</strong></a></li>
                     <li><a href = "Staff_cordinator.php"><strong>Staff-Co-ordinator</strong></a></li>
                     <li><a href = "certificate/certificate.php"><strong>Certificates</strong></a></li>

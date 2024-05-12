@@ -14,7 +14,7 @@
         <div class="navbar-header"><!--website name/title-->
                
                 <a class = "navbar-brand">
-                   <h2> YCET </h2>
+                   <h2><strong> YCET </strong></h2>
                 </a>
         </div>
        
